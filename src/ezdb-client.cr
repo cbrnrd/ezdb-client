@@ -2,7 +2,8 @@ require "socket"
 require "./version"
 
 # This class interacts with the ezdb daemon
-module Ezdb::Client
+module Ezdb
+class Client
   @hostname : String
   @port : Int8 | Int16 | Int32 | Int64
 
@@ -56,4 +57,5 @@ module Ezdb::Client
     @socket.puts(raw)
     @socket.gets
   end
+end
 end

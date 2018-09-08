@@ -3,7 +3,7 @@ require "./version"
 
 # This class interacts with the ezdb daemon
 module Ezdb
-class Client
+module Client
   @hostname : String
   @port : Int8 | Int16 | Int32 | Int64
 

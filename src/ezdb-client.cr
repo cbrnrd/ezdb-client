@@ -17,7 +17,7 @@ class Client
   end
 
   def qset(key, value)
-    send("qset #{key} value")
+    send("qset #{key} #{value}")
     ""
   end
 
